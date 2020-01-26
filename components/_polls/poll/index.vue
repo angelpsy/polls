@@ -14,7 +14,10 @@
         content tab conditions
       </b-tab-item>
       <b-tab-item label="Респонденты">
-        <PollRespondents />
+        <PollRespondents
+          :fields="item.fields.respondents.criteria"
+          :constructorFields="constructorFields.respondents.criteria"
+        />
       </b-tab-item>
     </b-tabs>
   </div>
@@ -27,17 +30,21 @@
     components: {
       PollRespondents
     },
+    props: {
+      item: {
+        type: Object,
+        require: true,
+      },
+      constructorFields: {
+        type: Object,
+        require: true,
+      }
+    },
     data() {
       return {
         activeTab: 0,
       };
     },
-    // props: {
-    //   item: {
-    //     type: Object,
-    //     require: true,
-    //   }
-    // },
   }
 </script>
 
