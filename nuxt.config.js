@@ -39,7 +39,7 @@ export default {
   */
   modules: [
     // Doc: https://github.com/nuxt-community/modules/tree/master/packages/bulma
-    '@nuxtjs/bulma',
+    'nuxt-buefy',
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     // Doc: https://github.com/nuxt-community/dotenv-module
@@ -58,7 +58,7 @@ export default {
     postcss: {
       preset: {
         features: {
-          customProperties: false
+          customProperties: true,
         }
       }
     },
