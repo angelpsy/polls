@@ -1,22 +1,26 @@
-# polls
+# Запуск на локальное машине
 
-> test
-
-## Build Setup
-
+## Единая команда
 ``` bash
-# install dependencies
+# install dependencies && build for production && launch server
+$ npm run install && npm run build && npm run start
+```
+
+## Отдельные команды
+
+### Установка зависимостей
+``` bash
 $ npm run install
+```
 
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
+### Сборка проекта
+``` bash
 $ npm run build
-$ npm run start
+```
 
-# generate static project
-$ npm run generate
+### Запуск локального сервера с результатом сборки
+``` bash
+$ npm run start
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
